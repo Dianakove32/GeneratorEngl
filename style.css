@@ -1,0 +1,149 @@
+:root {
+  font-size: 10px;
+}
+body {
+  background-color: #ffe699;
+  color: #000000;
+  /* font-family: serif; */
+  letter-spacing: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  font-family: "Redressed", "Redressed", cursive;
+  height: 100vh;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 10px;
+}
+h1 {
+  margin-top: 100px;
+  font-family: "Redressed", "Redressed", cursive;
+  text-align: center;
+  font-size: 6.4rem;
+}
+.content{
+    height: 65vh;
+    padding-top: 40px;
+}
+.output {
+  margin: 10px auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  max-width: 80%;
+  height: 200px;
+  /*  box-shadow: 0px 0px 15px -3px #FFFFFF; */
+  text-align: center;
+  color: white;
+  font-size: 3.5rem;
+}
+.inpt {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.inpt label {
+  margin: 10px;
+}
+#selectverb {
+  margin: 10px;
+  max-width: 166px;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 0px 0px 15px -6px #000000;
+  box-shadow: 0px 0px 15px -6px #000000;
+  font-family: serif;
+  font-size: 2.5rem;
+  background-color: #ffe699;
+  font-family: "Redressed", "Redressed", cursive;
+}
+
+#selectverb option {
+  background-color: #ffffff;
+  border: none;
+  font-family: "Redressed", "Redressed", cursive;
+  background-color: #ffe699;
+}
+.button {
+  max-width: 166px;
+  height: 50px;
+  background-color: #ffe699;
+  border: none;
+  font-family: "Redressed", "Redressed", cursive;
+  font-size: 2.5rem;
+  outline: none;
+  margin: 10px;
+  background-color: #ffe699;
+  -webkit-box-shadow: 0px 0px 15px -6px #000000;
+  box-shadow: 0px 0px 15px -6px #000000;
+  cursor: pointer;
+}
+.footer{
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+}
+@media (max-width: 700px) {
+    h1{
+        margin-top: 10px;
+    }
+  .output {
+    font-size: 3rem;
+  }
+  .inpt {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 578px) {
+  h1 {
+    font-size: 5rem;
+  }
+  .inpt {
+    padding-top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .output {
+    font-size: 2.5rem;
+    padding-top: 25px;
+  }
+}
+@media (max-width: 443px) {
+  h1 {
+    font-size: 5rem;
+  }
+  .content{
+    padding-top: 0px;
+}
+  .output {
+    font-size: 2.2rem;
+    padding-top: 0px;
+  }
+  .footer{
+      padding-top: 0;
+
+      font-size: 2rem;
+  }
+}
+@media (max-width: 360px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  .content{
+    padding-top: 0px;
+    height: 72vh;
+}
+  .output {
+    font-size: 2rem;
+  }
+  .inpt  {
+      font-size: 2.5rem;
+  }
+  .footer{
+      height: 20px;
+  }
+}
