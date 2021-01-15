@@ -227,7 +227,7 @@ changePage.addEventListener("change", function () {
         document.body.style.background = "";
         content.style.display = "";
         content2.style.display = "";
-        lebel.innerHTML="Rundom words";
+        lebel.innerHTML="Random words";
         lebel.style.color="";
     }
 
