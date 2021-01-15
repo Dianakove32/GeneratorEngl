@@ -14,15 +14,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Generator</title>
   </head>
   <body>
     <header class="header">
       <div class="wrapper">
-        <h1>Learn one phrase a day</h1>
+        <div class="switcher">
+          <input type="checkbox" class="checkbox" id="checkbox" />
+<label id="lebel" for="checkbox">Rundom words</label>
+        </div>
       </div>
     </header>
     <section class="content">
+      <h1>Learn one phrase a day</h1>
       <div class="wrapper">
         <div class="output"></div>
         <div class="inpt">
@@ -34,12 +38,34 @@
             <option value="give">Give</option>
             <option value="proverb">Proverb</option>
           </select>
-
            <button class="button" >Lets start</button>
         </div>
+<div>
+    <label for="checkbox2">Display translation</label>
+      <input type="checkbox" id="checkbox2" />
+</div>
+      <div class="quantity">
+        <label for="quantity">Quantity (between 1 and 3):</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="3">
+
+      </div>
+
       </div>
     </section>
-    <footer class="footer">
+    <section class="content content2">
+      <div class="wrapper">
+        <h1 id="h1">Rundom words</h1>
+
+      <div class="output" id="output2"></div>
+
+      <div class="quantity2">
+        <label for="quantity">Quantity (between 1 and 5):</label>
+      <input id="count2" type="number" id="quantity" name="quantity" min="1" max="5">
+
+      <button id="btn2" class="button" >Lets start2</button>
+     </div></div>
+    </section>
+    <footer class="footer footer2">
       <div class="wrapper">created by Diana Kovaleva
           <span>2021</span>
       </div>

@@ -9,33 +9,47 @@ body {
   font-weight: 400;
   font-size: 3rem;
   font-family: "Redressed", "Redressed", cursive;
-  height: 100vh;
+
 }
 .wrapper {
   margin: 0 auto;
   max-width: 1000px;
   padding: 0 10px;
 }
-h1 {
-  margin-top: 100px;
+h1   {
+  margin: 10px 0px 10px 0px;
   font-family: "Redressed", "Redressed", cursive;
   text-align: center;
   font-size: 6.4rem;
 }
+
+p{
+  margin: 25px 0px 0px 0px;
+  line-height: 45px;
+}
 .content{
-    height: 65vh;
-    padding-top: 40px;
+
+    height: 76vh;
+    padding-top: 10px;
+    display: block;
+}
+.content2 p{
+  padding-left: 65px;
+
 }
 .output {
-  margin: 10px auto;
+  margin: 0 auto;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  max-width: 80%;
-  height: 200px;
+  max-width: 100%;
+  height:380px;
   /*  box-shadow: 0px 0px 15px -3px #FFFFFF; */
   text-align: center;
-  color: white;
-  font-size: 3.5rem;
+  color: rgb(149, 83, 6);
+  font-size: 3rem;
+}
+#output2{
+  color: #CDD1DA;
 }
 .inpt {
   padding-top: 20px;
@@ -81,10 +95,80 @@ h1 {
   box-shadow: 0px 0px 15px -6px #000000;
   cursor: pointer;
 }
+#btn2{
+  margin-left: 158px;
+}
+
+.checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 20px;
+}
+.checkbox + label {
+	position: relative;
+	padding: 0 0 0 60px;
+	cursor: pointer;
+}
+.checkbox + label:before {
+	content: '';
+	position: absolute;
+	top: -4px;
+	left: 0;
+	width: 50px;
+	height: 26px;
+	border-radius: 13px;
+	background: #CDD1DA;
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+	transition: .2s;
+}
+.checkbox + label:after {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: 2px;
+	width: 22px;
+	height: 22px;
+	border-radius: 10px;
+	background: #FFF;
+	box-shadow: 0 2px 5px rgba(0,0,0,.3);
+	transition: .2s;
+}
+.checkbox:checked + label:before {
+	background: #FFF;
+}
+.checkbox:checked + label:after {
+	left: 26px;
+}
+/* .checkbox:focus + label:before {
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(88, 88, 76, 0.7);
+} */
+#checkbox2 {
+  width: 30px;
+  height: 30px;
+}
+label {
+margin-left: 116px;
+
+}
+
+
+
+.content2{
+  display: none;
+  color:#ffe699;
+}
+.quantity{
+  margin-top: 20px;
+}
 .footer{
     height: 50px;
     text-align: center;
-    padding-top: 15px;
+    margin-top: 20px;
+    padding-top: 70px;
+}
+.footer2{
+  color:#ffe699;
 }
 @media (max-width: 700px) {
     h1{
